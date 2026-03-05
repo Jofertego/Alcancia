@@ -4,6 +4,8 @@ public class Main {
         Scanner usuario=new Scanner (System.in);
         int m20=0,m50=0,m100=0,m200=0,m500=0,m1000=0,op,opm,activo=0,s20=0,s50=0,s100=0,s200=0,s500=0,s1000=0,total=0,meta;
         while(activo==0) {
+            System.out.println("Asigne una meta de ahorro: ");
+            meta = usuario.nextInt();
             System.out.println("""
                     Bienvenido a su alcancia, escoja una opcion.
                     1.Ahorrar
@@ -78,8 +80,6 @@ public class Main {
                     System.out.println("El acumulado total es de: "+total);
                     break;
                 case 5:
-                    System.out.println("Asigne una meta: ");
-                    meta = usuario.nextInt();
                     if(total>=meta)
                         activo=activo=1;
                     else
