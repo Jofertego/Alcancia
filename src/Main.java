@@ -76,15 +76,20 @@ public class Main {
                 case 4:
                     total=s20+s50+s100+s200+s500+s1000;
                     System.out.println("El acumulado total es de: "+total);
+                    break;
                 case 5:
                     System.out.println("Asigne una meta: ");
                     meta = usuario.nextInt();
-                    if(meta>=total)
+                    if(total>=meta)
                         activo=activo=1;
+                    else
+                        System.out.println("La meta va en: "+total);
+                    break;
                 case 6:
                     activo=activo=1;
+                    break;
             }
         }
         System.out.println("El programa se cerro");
-    }
+    }5
 }
