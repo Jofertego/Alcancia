@@ -68,11 +68,11 @@ public class Main {
                         System.out.println("La suma de monedas de 50 es: "+s50);
                         s100=m100*100;
                         System.out.println("La suma de monedas de 100 es: "+s100);
-                        s200=m200*20;
+                        s200=m200*200;
                         System.out.println("La suma de monedas de 200 es: "+s200);
-                        s500=m500*20;
+                        s500=m500*500;
                         System.out.println("La suma de monedas de 500 es: "+s500);
-                        s1000=m1000*20;
+                        s1000=m1000*1000;
                         System.out.println("La suma de monedas de 1000 es: "+s1000);
                         break;
                 case 4:
@@ -80,6 +80,13 @@ public class Main {
                     System.out.println("El acumulado total es de: "+total);
                     break;
                 case 5:
+                    s20=m20*20;
+                    s50=m50*50;
+                    s100=m100*100;
+                    s200=m200*200;
+                    s500=m500*500;
+                    s1000=m1000*1000;
+                    total=s20+s50+s100+s200+s500+s1000;
                     if(total>=meta)
                         activo=activo=1;
                     else
